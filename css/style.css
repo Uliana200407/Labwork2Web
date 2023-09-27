@@ -1,17 +1,16 @@
-/* Reset default browser styles */
 body, html {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    font-family: Arial, sans-serif; /* Default font family */
+    font-family: Arial, sans-serif; 
 }
 
-/* Header styles */
 header {
     background: #000;
     padding: 35px 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
@@ -33,16 +32,14 @@ header .logo:hover {
     position: relative;
     min-width: 120px;
     max-height: 18px;
-    display: inline-block;
+    display: flex; /* Use Flexbox for the discount banner */
+    align-items: center; /* Vertically center content */
 }
 
 .discount-banner::after {
     content: "🍽️";
-    position: absolute;
     font-size: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 18px;
+    margin-left: 10px; /* Add spacing between the text and icon */
 }
 
 /* Wrapper styles */
@@ -56,16 +53,15 @@ main {
     flex-grow: 1;
 }
 
-/* Navigation (aside) styles */
 nav {
     width: 15%;
     text-align: right;
     background: #ffb703;
     padding-right: 60px;
-    justify-content: center;
     padding-top: 100px;
     display: flex;
-    align-items: center;
+    flex-direction: column; 
+    align-items: flex-end;
 }
 
 nav li {
@@ -102,14 +98,12 @@ nav a {
     flex-direction: column;
 }
 
-/* Aside (contact form) styles */
 aside {
     width: 25%;
     display: flex;
     flex-direction: column;
 }
 
-/* Section (main content) styles */
 section {
     width: 80%;
     padding-left: 50px;
@@ -125,7 +119,6 @@ section .title {
     padding-bottom: 25px;
 }
 
-/* Popular Dishes styles */
 .popular-dishes {
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +129,7 @@ section .title {
 .dish {
     text-align: center;
     max-width: 300px;
+    flex: 1; 
 }
 
 .dish img {
@@ -162,6 +156,9 @@ footer {
     color: #fff;
     padding-right: 60px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
 }
 
 footer .title {
@@ -180,11 +177,8 @@ footer .info {
     margin-top: 70px;
     font-size: 22px;
     display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-left: auto;
+    flex-direction: column; 
+    align-items: flex-end; 
 }
 
 footer .info span {
@@ -203,7 +197,6 @@ footer .info span {
     background: #ffb703;
     resize: vertical;
     flex-direction: column;
-
 }
 
 aside .title {
@@ -214,20 +207,16 @@ aside .title {
     font-family: "Lato", sans-serif;
     background-color: #000;
     border-bottom: 8px solid #000; /* Add a black border line */
-
-
 }
 
 .feedback .author {
     font-family: "Lato", sans-serif;
-
 }
 
 .contact-form {
     flex-grow: 1;
     display: flex;
     align-items: center;
-
 }
 
 .first {
@@ -238,21 +227,21 @@ aside .title {
     resize: vertical;
 }
 
-
-
 /* Page image styles */
 .page-image {
     height: 45%;
     width: 90%;
     max-height: 300px;
     margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .page-image img {
+    max-width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    height: 100%;
-    width: 100%;
 }
 
 /* Description styles */
@@ -281,6 +270,9 @@ section .description {
     padding: 20px;
     text-align: center;
     font-size: 18px;
+    display: flex; /* Use Flexbox for the map-like background */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 /* Menu styles */

@@ -1,0 +1,313 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.popular-dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.dish {
+    text-align: center;
+}
+
+.dish img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dish h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dish p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.discount-icon {
+    font-size: 24px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.discount-icon:hover {
+    transform: scale(1.2);
+}
+
+header {
+    background: #000;
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 48px;
+    color: #ffb703;
+    font-family: "Dancing Script", cursive;
+    transition: color 0.3s;
+}
+
+header .logo:hover {
+    color: #fff;
+}
+
+.discount-banner {
+    font-family: "Lato", sans-serif;
+    background: #ffcc00;
+    padding: 14px 60px 14px 18px;
+    border-radius: 100px;
+    position: relative;
+    min-width: 120px;
+    max-height: 18px;
+    display: inline-block;
+}
+
+.discount-banner::after {
+    content: "🍽️";
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav {
+    width: 15%;
+    text-align: right;
+    background: #ffb703;
+    padding-right: 60px;
+    justify-content: center;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav a {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #000;
+    right: -32px;
+    top: 8px;
+}
+
+.content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+section .title {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    max-width: 100%;
+}
+
+.photo {
+    text-align: center;
+    max-height: 600px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.photo .text {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #000;
+    margin-top: 10px;
+}
+
+footer {
+    font-family: "Lato", sans-serif;
+    background: #000;
+    color: #fff;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+footer .title {
+    font-size: 26px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    background: #FCB300;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    text-align: end;
+    width: 150px;
+}
+
+footer .info {
+    margin-top: 70px;
+    font-size: 22px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+footer .info span {
+    padding-top: 10px;
+}
+
+.feedback .text,
+.side-block {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #000;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background: #ffb703;
+    resize: vertical;
+    flex-direction: column;
+}
+
+aside .title {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-family: "Lato", sans-serif;
+    background-color: #000;
+}
+
+.feedback .author {
+    font-family: "Lato", sans-serif;
+}
+
+.contact-form {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.first {
+    border-bottom: 8px #000 solid;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.page-image {
+    height: 45%;
+    width: 90%;
+    max-height: 300px;
+    margin: auto;
+}
+
+.page-image img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+section .description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.center-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+
+menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #275C2D;
+    transform: scale(1.1);
+}
+
+.menu a.active {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

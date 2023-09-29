@@ -81,6 +81,7 @@ header .logo:hover {
 
 .wrapper {
     display: flex;
+
 }
 
 main {
@@ -152,31 +153,6 @@ section .title {
     padding-bottom: 25px;
 }
 
-.photos {
-    display: grid;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo img {
-    max-width: 100%;
-}
-
-.photo {
-    text-align: center;
-    max-height: 600px;
-    max-width: 600px;
-    margin-bottom: 20px;
-}
-
-.photo .text {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #000;
-    margin-top: 10px;
-}
 
 footer {
     font-family: "Lato", sans-serif;
@@ -302,7 +278,7 @@ menu li {
 }
 
 .container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;

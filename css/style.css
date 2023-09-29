@@ -287,24 +287,7 @@ section .description {
     margin-top: 30px;
 }
 
-.center-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh; 
-}
 
-.map-like {
-    background-image: url('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.34001926536!2d-77.09697671431041!3d38.89372554401473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2z0JLQsNGI0LjQvdCz0YLQvtC9LCDQntC60YDRg9CzINCa0L7Qu9GD0LzQsdGW0Y8sINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1694781246473!5m2!1suk!2sua'); /* Замініть 'your-map-image.jpg' на фонове зображення у формі карти */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px; 
-    width: 100%; 
-    color: white;
-    padding: 20px; 
-    text-align: center; 
-    font-size: 18px; 
-}
 
 menu li {
     display: inline;

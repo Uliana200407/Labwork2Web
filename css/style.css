@@ -1,10 +1,10 @@
 
+
 body, html {
     margin: 0;
     padding: 0;
     background-color: #ffffff; 
 }
-
 .popular-dishes {
     display: flex;
     flex-wrap: wrap;
@@ -15,9 +15,6 @@ body, html {
 .dish {
     text-align: center;
     max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .dish img {
@@ -35,9 +32,6 @@ body, html {
 .dish p {
     font-size: 16px;
     color: #555;
-    margin-top: 10px;
-    flex-grow: 1;
-    text-align: left;
 }
 
 .discount-icon {
@@ -49,7 +43,6 @@ body, html {
 .discount-icon:hover {
     transform: scale(1.2); 
 }
-
 header {
     background: #000;
     padding: 35px 60px;
@@ -63,11 +56,9 @@ header .logo {
     font-family: "Dancing Script", cursive;
     transition: color 0.3s; 
 }
-
 header .logo:hover {
     color: #fff; 
 }
-
 .discount-banner {
     font-family: "Lato", sans-serif;
     background: #ffcc00; 
@@ -79,133 +70,97 @@ header .logo:hover {
     display: inline-block;
 }
 
-.discount-banner::after {
-    content: "🍽️"; 
-    font-size: 24px; 
-    top: 50%;
-    transform: translateY(-50%);
-    right: 18px;
-}
 
-.wrapper {
-    display: flex;
-}
 
-main {
-    display: flex;
-    flex-grow: 1;
-}
 
-nav {
-    width: 15%;
-    text-align: right;
-    background: #ffb703;
-    padding-right: 60px;
-    justify-content: center;
-    padding-top: 100px;
+.wrapper{
+	display: flex;
+	
+}
+main{
+
+	display: flex;
+	flex-grow: 1;
+}
+nav{
+	width: 	15%;
+	text-align: right;
+	background: #ffb703;
+	padding-right: 60px;
+	justify-content: center;
+	padding-top: 100px;
     display: flex;
     align-items: center;
 }
-
-nav li {
-    list-style: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+nav li{
+	list-style: none;
+		padding-top: 15px;
+	padding-bottom: 15px;
 }
 
-nav a {
+nav a{
     font-family: "Lato", sans-serif; 
-    font-size: 22px;
-    color: #000;
-    text-decoration: none;
-    position: relative;
+	font-size: 22px;
+	color:#000;
+	text-decoration: none;
+	position: relative;
     display: flex;
     align-items: center;
 }
-
-.active::after {
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 10px;
-    background: #000;
+.active::after{
+	content:"";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius:10px;
+	background: #000;
     right: -32px;
     top: 8px;
-}
 
-.content {
-    width: 85%;
-    display: flex;
+}
+.content{
+	width: 85%;
+	display: flex;	
+	flex-direction: column;
+}
+aside{
+	width: 25%;
+	display: flex;
     flex-direction: column;
 }
-
-aside {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+section{
+	width: 80%;
+	padding-left: 50px;	
+	padding-right: 50px;
+	padding-bottom: 50px;	
 }
-
-section {
-    width: 80%;
-    padding-left: 50px;	
-    padding-right: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-section .title {
+section .title{
     font-family: "Lato", sans-serif; 
-    text-align: center;
-    font-size: 32px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+	text-align: center;
+	font-size: 32px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
-.photos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center; 
-}
 
-.photo img {
-    max-width: 100%;
-}
-
-.photo {
-    text-align: center;
-    max-height: 600px; 
-    max-width: 600px; 
-    margin-bottom: 20px;
-}
-
-.photo .text {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #000;
-    margin-top: 10px; 
-}
-
-footer {
+footer{
     font-family: "Lato", sans-serif; 
-    background: #000;
+	background: #000;
     color: #fff;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    position: relative;
+	padding-right: 60px;
+	padding-bottom: 30px;
 }
 
-footer .title {
-    font-size: 26px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 10px;
-    background: #FCB300;
-    border-radius: 0 0 20px 20px;
-    text-align: end;
-    width: 150px;
+footer .title{
+	font-size: 26px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	background: #FCB300;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	text-align: end;
+	width:150px;
 }
 
 footer .info {
@@ -223,18 +178,22 @@ footer .info span {
     padding-top: 10px;
 }
 
+
+
+
 .feedback .text,
 .side-block {
     font-size: 16px;
     font-family: "Lato", sans-serif;
     color: #000;
-    padding: 30px;
+    padding:30px;
     display: flex;
     align-items: center;
     background: #ffb703;
     resize: vertical;
     flex-direction: column;
 }
+
 
 aside .title {
     text-align: center;
@@ -245,76 +204,74 @@ aside .title {
     background-color: #000; 
 }
 
+
+
+
 .feedback .author {
     font-family: "Lato", sans-serif; 
 }
 
-.contact-form {
+ .contact-form {
     flex-grow: 1;
     display: flex;
     align-items: center;
-}
 
+}
 .first {
     border-bottom: 8px #000 solid;
 }
+
 
 .contact-form textarea {
     resize: vertical;
 }
 
-.page-image {
-    height: 45%;
+
+
+.page-image{
+	height: 45%;
     width: 90%;
     max-height: 300px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.page-image img {
-    object-fit: cover;
+.page-image img{
+	object-fit: cover;
     object-position: 50% 50%;
     height: 100%;
     width: 100%;
 }
-
-/* Стилі для тексту в секції */
-section .description {
+section .description{
     font-family: "Lato", sans-serif; 
-    font-size: 16px;
-    margin-top: 30px;
+	font-size: 16px;
+	margin-top:30px;
 }
-
-
-
-menu li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease-in-out; 
-    font-weight: bold;
-}
-
-.menu a:hover {
-    color: #275C2D; 
-    transform: scale(1.1);
-}
-
-.menu a.active {
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
+        menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease-in-out; 
+            font-weight: bold;
+        }
+        
+        .menu a:hover {
+            color: #275C2D; 
+            transform: scale(1.1);
+        }
+        
+        .menu a.active {
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        

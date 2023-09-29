@@ -32,11 +32,6 @@ body, html {
 }
 
 
-.discount-icon {
-    font-size: 24px;
-    margin-left: 5px;
-    transition: transform 0.3s;
-}
 
 .discount-icon:hover {
     transform: scale(1.2);
@@ -71,13 +66,6 @@ header .logo:hover {
     display: inline-block;
 }
 
-.discount-banner::after {
-    content: "🍽️";
-    font-size: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 18px;
-}
 
 .wrapper {
     display: flex;

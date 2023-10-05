@@ -71,15 +71,11 @@ header .logo:hover {
 
 }
 
-
 .wrapper{
 	display: flex;
 }
 
-main{
-	display: flex;
-	 flex-grow: 1; 
-}
+
 
 nav{
 	width: 	15%;
@@ -88,17 +84,13 @@ nav{
 	padding-right: 60px;
 	justify-content: center;
 	padding-top: 100px;
-    /* display: flex;
-    align-items: center; */
-    position: relative; /* Додано position: relative; */
-
+    position: relative; 
 }
 
 nav li{
 	list-style: none;
 	padding-top: 15px;
 	padding-bottom: 15px;
-    
 }
 
 nav a{
@@ -138,7 +130,9 @@ section{
 	padding-right: 50px;
 	padding-bottom: 50px;	
 }
-
+main{
+	display: flex;
+}
 section .title{
     font-family: "Lato", sans-serif; 
 	text-align: center;
@@ -205,7 +199,7 @@ aside .title {
 }
 
  .contact-form {
-    display: flex;
+    display: block;
     align-items: center;
 }
 

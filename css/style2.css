@@ -66,11 +66,13 @@ header .logo:hover {
     padding: 14px 60px 14px 18px;
     border-radius: 100px;
     position: relative;
-    min-width: 20px;
-    max-height: auto;
-    float: right; 
-
-}
+    float: right;
+    clear: right; 
+    min-width: auto;
+    max-height: none;
+  }
+  
+  
 
 .wrapper{
 	display: flex;

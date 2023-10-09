@@ -176,18 +176,17 @@ footer .info span {
     text-align: right;
 }
 
-.feedback .text,
-.side-block {
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
-  color: #000;
-  padding: 30px;
-  display: block; 
-  align-items: center;
-  background: #ffb703;
-  resize: vertical;
+.feedback .text {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #000;
+    padding: 30px;
+    text-align: center;
+    background: #ffb703;
+    resize: vertical;
+    margin-bottom: 20px; 
+  }
 
-}
 
 aside .title {
     text-align: center;
@@ -202,15 +201,14 @@ aside .title {
     font-family: "Lato", sans-serif; 
 }
 
+
 .contact-form {
     display: block;
-    align-items: center;
-    text-align: center; 
-
-    position: static; /* Додали position: static; */
-
+    padding: 30px;
+    text-align: center;
+    background: #ffb703;
+    resize: vertical;
   }
-
 .first {
     border-bottom: 8px #000 solid;
 }

@@ -186,7 +186,6 @@ footer .info span {
   align-items: center;
   background: #ffb703;
   resize: vertical;
-  overflow: auto;
 
 }
 
@@ -207,7 +206,9 @@ aside .title {
     display: block;
     align-items: center;
     text-align: center; 
-    overflow: auto;
+
+    position: static; /* Додали position: static; */
+
   }
 
 .first {

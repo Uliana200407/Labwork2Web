@@ -67,17 +67,9 @@ header .logo:hover {
     position: relative;
     min-width: 120px;
     max-height: auto;
-    display: inline-block;
+    display: flex;
 }
 
-.discount-banner::after {
-    content: "🍽️"; 
-    position: absolute;
-    font-size: 24px; 
-    top: 50%;
-    transform: translateY(-50%);
-    right: 18px;
-}
 
 
 .wrapper{

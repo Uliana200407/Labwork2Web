@@ -66,6 +66,7 @@ header .logo:hover {
     border-radius: 100px;
     position: relative;
     min-width: 120px;
+    max-height: auto;
     display: inline-block;
 }
 

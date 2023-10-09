@@ -186,6 +186,8 @@ footer .info span {
   align-items: center;
   background: #ffb703;
   resize: vertical;
+  overflow: auto;
+
 }
 
 aside .title {
@@ -205,6 +207,7 @@ aside .title {
     display: block;
     align-items: center;
     text-align: center; 
+    overflow: auto;
   }
 
 .first {

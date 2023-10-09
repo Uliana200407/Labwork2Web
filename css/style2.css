@@ -178,14 +178,14 @@ footer .info span {
 
 .feedback .text,
 .side-block {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #000;
-    padding:30px;
-    display: table-column;
-    align-items: center;
-    background: #ffb703;
-    resize: vertical;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #000;
+  padding: 30px;
+  display: block; 
+  align-items: center;
+  background: #ffb703;
+  resize: vertical;
 }
 
 aside .title {
@@ -201,10 +201,11 @@ aside .title {
     font-family: "Lato", sans-serif; 
 }
 
- .contact-form {
+.contact-form {
     display: block;
     align-items: center;
-}
+    text-align: center; 
+  }
 
 .first {
     border-bottom: 8px #000 solid;

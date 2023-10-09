@@ -36,26 +36,26 @@ body, html {
 .discount-icon:hover {
     transform: scale(1.2);
 }
-
 header {
     background: #000;
     padding: 35px 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-header .logo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  
+  header .logo {
     font-size: 48px;
     color: #ffb703;
     font-family: "Dancing Script", cursive;
     transition: color 0.3s;
-}
-
-header .logo:hover {
+  }
+  
+  header .logo:hover {
     color: #fff;
-}
-
-.discount-banner {
+  }
+  
+  .discount-banner {
     font-family: "Lato", sans-serif;
     background: #ffcc00;
     padding: 14px 60px 14px 18px;
@@ -64,8 +64,8 @@ header .logo:hover {
     min-width: 120px;
     max-height: 18px;
     display: inline-block;
-}
-
+  }
+  
 
 .wrapper {
     display: flex;
@@ -74,7 +74,6 @@ header .logo:hover {
 
 main {
     display: flex;
-    flex-grow: 1;
 }
 
 nav {
@@ -117,15 +116,17 @@ nav a {
 .content {
     width: 85%;
     display: grid;
-    flex-direction: column;
-}
-
-aside {
+    grid-template-columns: 1fr; 
+    grid-auto-rows: auto; 
+  }
+  
+  aside {
     width: 25%;
     display: grid;
-    flex-direction: column;
-}
-
+    grid-template-columns: 1fr; 
+    grid-auto-rows: auto; 
+  }
+  
 section {
     width: 80%;
     padding-left: 50px;
@@ -165,12 +166,12 @@ footer .info {
     margin-top: 70px;
     font-size: 22px;
     display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: auto; 
     width: 50%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
     margin-left: auto;
-}
+  }
+  
 
 footer .info span {
     padding-top: 10px;
@@ -178,16 +179,19 @@ footer .info span {
 
 .feedback .text,
 .side-block {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #000;
-    padding: 30px;
-    display: grid;
-    align-items: center;
-    background: #ffb703;
-    resize: vertical;
-    flex-direction: column;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #000;
+  padding: 30px;
+  display: grid;
+  justify-items: center; 
+  align-items: center; 
+  background: #ffb703;
+  resize: vertical;
+  grid-template-rows: 1fr auto; 
 }
+
+
 
 aside .title {
     text-align: center;
@@ -203,7 +207,6 @@ aside .title {
 }
 
 .contact-form {
-    flex-grow: 1;
     display: grid;
     align-items: center;
 }
@@ -236,13 +239,6 @@ section .description {
     margin-top: 30px;
 }
 
-.center-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-}
-
 
 menu li {
     display: inline;
@@ -264,11 +260,10 @@ menu li {
 .menu a.active {
     font-weight: bold;
 }
-
 .container {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-items: center; 
+    align-items: center; 
     text-align: center;
-}
+  }
+  

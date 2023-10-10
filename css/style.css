@@ -169,6 +169,8 @@ footer{
     color: #fff;
 	padding-right: 60px;
 	padding-bottom: 30px;
+    display: flex;
+    align-items: start;
 }
 
 footer .title{
@@ -178,7 +180,6 @@ footer .title{
 	padding-right: 10px;
 	background: #FCB300;
 	border-radius: 0 0 20px 20px;
-	position: absolute;
 	text-align: end;
 	width:150px;
 }

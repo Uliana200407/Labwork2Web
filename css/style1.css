@@ -212,6 +212,7 @@ aside .title {
 
 .first {
     border-bottom: 8px #000 solid;
+    min-width: 100px;
 }
 
 .contact-form textarea {

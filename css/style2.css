@@ -1,228 +1,220 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 .popular-dishes {
-    text-align: center;
+  text-align: center;
 }
 
 .dish {
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-
 .dish img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .dish h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .dish p {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
 }
 
 .discount-icon {
-    font-size: 24px; 
-    margin-left: 5px;
-    transition: transform 0.3s; 
+  font-size: 24px;
+  margin-left: 5px;
+  transition: transform 0.3s;
 }
 
 .discount-icon:hover {
-    transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 header {
-    background: #000;
-    padding: 35px 60px;
-    overflow: auto;
-    
+  background: #000;
+  padding: 35px 60px;
+  overflow: auto;
 }
 
 header .logo {
-    font-size: 48px;
-    color: #ffb703;
-    font-family: "Dancing Script", cursive;
-    transition: color 0.3s; 
+  font-size: 48px;
+  color: #ffb703;
+  font-family: "Dancing Script", cursive;
+  transition: color 0.3s;
 }
 
 header .logo:hover {
-    color: #fff; 
+  color: #fff;
 }
 
 .discount-banner {
-    font-family: "Lato", sans-serif;
-    background: #ffcc00; 
-    padding: 14px 60px 14px 18px;
-    border-radius: 100px;
-    position: relative;
-    float: right;
-    clear: right; 
-    min-width: auto;
-    max-height: none;
-  }
-  
-  
-
-.wrapper{
-	display: flex;
+  font-family: "Lato", sans-serif;
+  background: #ffcc00;
+  padding: 14px 60px 14px 18px;
+  border-radius: 100px;
+  position: relative;
+  float: right;
+  clear: right;
+  min-width: auto;
+  max-height: none;
 }
 
-
-
-nav{
-	width: 	15%;
-	text-align: right;
-	background: #ffb703;
-	padding-right: 60px;
-	justify-content: center;
-	padding-top: 100px;
-    position: relative; 
+.wrapper {
+  display: flex;
 }
 
-nav li{
-	list-style: none;
-	padding-top: 15px;
-	padding-bottom: 15px;
+nav {
+  width: 15%;
+  text-align: right;
+  background: #ffb703;
+  padding-right: 60px;
+  justify-content: center;
+  padding-top: 100px;
+  position: relative;
 }
 
-nav a{
-    font-family: "Lato", sans-serif; 
-	font-size: 22px;
-	color:#000;
-	text-decoration: none;
-	position: relative;
-    display: block;
-    align-items: center;
+nav li {
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.active::after{
-	content:"";
-	height: 10px;
-	width: 10px;
-	border-radius:10px;
-	background: #000;
-    right: -32px;
-    top: 8px;
+nav a {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  align-items: center;
 }
 
-.content{
-	width: 85%;
-	display: table-column;	
+.active::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #000;
+  right: -32px;
+  top: 8px;
 }
 
-aside{
-	width: 25%;
-	display: table-column;
-    
+.content {
+  width: 85%;
+  display: table-column;
 }
 
-section{
-	width: 80%;
-	padding-left: 50px;	
-	padding-right: 50px;
-	padding-bottom: 50px;	
-}
-main{
-	display: flex;
-}
-section .title{
-    font-family: "Lato", sans-serif; 
-	text-align: center;
-	font-size: 32px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+aside {
+  width: 25%;
+  display: table-column;
 }
 
-footer{
-    font-family: "Lato", sans-serif; 
-	background: #000;
-    color: #fff;
-	padding-right: 60px;
-	padding-bottom: 30px;
-    margin-top: 0; /* Усунули відступ від верху футера */
-    margin-bottom: 0; /* Усунули відступ від нижнього краю футера */
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+section {
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+main {
+  display: flex;
+}
+.title {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-footer .title{
-	font-size: 26px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-right: 10px;
-	background: #FCB300;
-	border-radius: 0 0 20px 20px;
-	text-align: end;
-	width:150px;
+footer {
+  font-family: "Lato", sans-serif;
+  background: #000;
+  color: #fff;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  margin-top: 0; /* Усунули відступ від верху футера */
+  margin-bottom: 0; /* Усунули відступ від нижнього краю футера */
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+footer .title {
+  font-size: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  background: #fcb300;
+  border-radius: 0 0 20px 20px;
+  text-align: end;
+  width: 150px;
 }
 
 footer .info {
-    margin-top: 70px;
-    font-size: 22px;
-    width: 50%;
-    margin-left: auto;
+  margin-top: 70px;
+  font-size: 22px;
+  width: 50%;
+  margin-left: auto;
 }
 
 footer .info span {
-    display: block;
-    margin-top: 10px;
-    text-align: right;
+  display: block;
+  margin-top: 10px;
+  text-align: right;
 }
 
 .feedback .text {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #000;
-    padding: 30px;
-    text-align: center;
-    background: #ffb703;
-    resize: vertical;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #000;
+  padding: 30px;
+  text-align: center;
+  background: #ffb703;
+  resize: vertical;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 
 aside .title {
-    text-align: center;
-    font-size: 24px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    font-family: "Lato", sans-serif; 
-    background-color: #000; 
+  text-align: center;
+  font-size: 24px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-family: "Lato", sans-serif;
+  background-color: #000;
 }
 
 .feedback .author {
-    font-family: "Lato", sans-serif; 
+  font-family: "Lato", sans-serif;
 }
 
-
 .contact-form {
-    display: block;
-    padding: 30px;
-    text-align: center;
-    background: #ffb703;
-    resize: vertical;
-    margin-bottom: 0; 
-    overflow: hidden;
-  }
+  display: block;
+  padding: 30px;
+  text-align: center;
+  background: #ffb703;
+  resize: vertical;
+  margin-bottom: 0;
+  overflow: hidden;
+}
 .first {
-    border-bottom: 8px #000 solid;
+  border-bottom: 8px #000 solid;
 }
 
 .contact-form textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .feedback .text,
@@ -233,7 +225,6 @@ aside .title {
   padding: 30px;
   text-align: center; /* Додали цей рядок для центрування тексту */
   background: #ffb703;
-  resize: vertical;
 }
 
 /* Вирівнювання тексту та блоку вертикально */
@@ -249,51 +240,68 @@ aside .title {
   margin: 0 auto; /* Це для горизонтального центрування блоку */
 }
 
-.page-image{
-	height: 45%;
-    width: 90%;
-    max-height: 300px;
-    margin: auto;
+.page-image {
+  height: 45%;
+  width: 90%;
+  max-height: 300px;
+  margin: auto;
 }
 
-.page-image img{
-	object-fit: cover;
-    object-position: 50% 50%;
-    height: 100%;
-    width: 100%;
+.page-image img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
 }
 
-section .description{
-    font-family: "Lato", sans-serif; 
-	font-size: 16px;
-	margin-top:30px;
+section .description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
 }
-
 
 menu li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease-in-out; 
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .menu a:hover {
-    color: #275C2D; 
-    transform: scale(1.1);
+  color: #275c2d;
+  transform: scale(1.1);
 }
 
 .menu a.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .container {
-    display: table-column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: table-column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block {
+  background-color: #ffb703;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  padding: 30px;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table p {
+  font-size: 16px;
+  color: #555;
 }
